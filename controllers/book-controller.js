@@ -30,3 +30,5 @@ router.get("/generes", async(request,response)=>{
         response.status(500).send(err.message);
     }
 })
+
+module.exports = router;
