@@ -1,7 +1,7 @@
 const dal = require("../data-access-layer/dal");
 
 async function getAllBooksAsync() {
-  const sql = `SELECT bookId, G.genre, name, description , price , stock  
+  const sql = `SELECT bookId, G.bookType, name, description , price , stock  
     FROM  books  AS B 
     JOIN genres as G 
     on B.genre = G.genre`;
